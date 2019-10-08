@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit" name="magenest_popup_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit\Tabs" name="magenest_popup_tabs">
+                <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit\Tab\General" name="magenest_popup_general"/>
+                <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit\Tab\Setting" name="magenest_popup_settings"/>
+                <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit\Tab\EditHtml" name="magenest_popup_edithtml"/>
+                <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit\Tab\Report" name="magenest_popup_report"/>
+
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">general</argument>
+                    <argument name="block" xsi:type="string">magenest_popup_general</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">setting</argument>
+                    <argument name="block" xsi:type="string">magenest_popup_settings</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">edithtml</argument>
+                    <argument name="block" xsi:type="string">magenest_popup_edithtml</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">report</argument>
+                    <argument name="block" xsi:type="string">magenest_popup_report</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="js">
+            <block class="Magenest\Popup\Block\Adminhtml\Popup\Edit\Js" name="magenest_popup_js"/>
+        </referenceContainer>
+    </body>
+</page>

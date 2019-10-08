@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magenest_Popup::magenest_popup"
+             title="Magenest Popup"
+             translate="title"
+             module="Magenest_Popup"
+             sortOrder="50"
+             dependsOnModule="Magenest_Popup"
+             resource="Magenest_Popup::popup"
+             parent="Magento_Backend::content"
+        />
+
+        <add id="Magenest_Popup::template"
+             title="Manage Template"
+             translate="title"
+             module="Magenest_Popup"
+             sortOrder="20"
+             parent="Magenest_Popup::magenest_popup"
+             action="magenest_popup/template/index"
+             resource="Magenest_Popup::template"
+        />
+
+        <add id="Magenest_Popup::popup"
+             title="Manage Popup"
+             translate="title"
+             module="Magenest_Popup"
+             sortOrder="30"
+             parent="Magenest_Popup::magenest_popup"
+             action="magenest_popup/popup/index"
+             resource="Magenest_Popup::popup"
+        />
+
+        <add id="Magenest_Popup::manage_configuration"
+             title="Configuration"
+             module="Magenest_Popup"
+             sortOrder="40"
+             parent="Magenest_Popup::magenest_popup"
+             action="adminhtml/system_config/edit/section/magenest_popup"
+             resource="Magenest_Popup::manage_configuration"
+        />
+    </menu>
+</config>

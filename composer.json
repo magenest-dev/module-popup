@@ -1,0 +1,25 @@
+{
+  "name": "magenest/module-popup",
+  "description": "Popup extension by Magenest",
+  "require": {
+    "magenest/core": "*"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "BSD-3-Clause"
+  ],
+  "authors": [
+     {
+       "name": "Magenest JSC"
+     }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Magenest\\Popup\\": ""
+    }
+  }
+}

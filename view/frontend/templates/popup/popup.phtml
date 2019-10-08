@@ -1,0 +1,130 @@
+<?php
+/** \Magenest\Block\Popup\Display $block */
+$cookie = $block->getCookieLifeTime();
+/** @var \Magenest\Popup\Model\Popup $popup */
+$popup = $block->getPopup();
+if($block->checkPageToShow() && !$block->isPreview()):
+    ?>
+    <div id="magenest-popup"
+         class="popup-wrapper"
+         style="display: none;"
+         data-mage-init='{"Magenest_Popup/js/popup": { "dataPopup": <?php echo /* @escapeNotVerified */ $block->getDataDisplay(); ?>}}'>
+    </div>
+    <script>
+        require([
+            'jquery',
+            'mage/url'
+        ],function ($,urlBuilder) {
+            $(document).ready(function () {
+                var interval, interval_close, count = 0;
+                // Create a cookie
+                function createCookie(name, value, days, sessionOnly) {
+
+                    var expires = "";
+
+                    if(sessionOnly) {
+                        expires = "; expires=0"
+                    }else if(days) {
+                        var date = new Date();
+                        date.setTime(date.getTime() + (days * 1000));
+                        expires = "; expires=" + date.toGMTString();
+                    }
+
+                    document.cookie = name + "=" + value + expires + "; path=/";
+                }
+                // Get the value of a cookie
+                function getCookie(name) {
+                    var nameEQ = name + "=";
+                    var ca = document.cookie.split(";");
+                    for(var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == " ") c = c.substring(1, c.length);
+                        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                    }
+                    return null;
+                }
+                // Delete a cookie
+                function eraseCookie(name) {
+                    createCookie(name, "", -1);
+                }
+                //check show popup
+                function checkShowPopup() {
+                    var self = this,
+                        dataPopup = <?= $block->getDataDisplay(); ?>,
+                        styles = $("#bio_ep").attr('style'),
+                        open_popup = -1;
+                    if(typeof styles !== 'undefined')
+                        open_popup = styles.search("display: block;");
+                    if(open_popup >= 0){
+                        var popup_id = dataPopup.popup_id,
+                            url_check_cookie = dataPopup.url_check_cookie,
+                            payload = {'popup_id': popup_id, 'form_key': $.mage.cookies.get('form_key')};
+                        clearInterval(interval);
+                        $.ajax({
+                            url: urlBuilder.build(url_check_cookie),
+                            type: 'GET',
+                            data: payload,
+                            contentType: 'json',
+                            /** @inheritdoc */
+                            success: function (response) {
+                            }
+                        });
+                    }
+                }
+                function closePopup() {
+                    $('#bio_ep_close, #yesbutton, #no-button').click(function () {
+                        var dataPopup = <?= $block->getDataDisplay(); ?>;
+                        clearInterval(interval_close);
+                        $('#bio_ep_close').attr('style','display: none;');
+                        $('#bio_ep').attr('style','display: none;');
+                        $('#bio_ep_bg').attr('style','display: none;background-color:transparent;opacity: 1;');
+                        // Set body overflow back to default to show scrollbars
+                        document.body.style.overflow = "visible";
+                        var popup_id = dataPopup.popup_id,
+                            url_close_popup = dataPopup.url_close_popup,
+                            payload = {'popup_id': popup_id, 'form_key': $.mage.cookies.get('form_key'), 'flag':count};
+                        count++;
+                        var enable_cookie = dataPopup.enable_cookie_lifetime;
+                        if(enable_cookie == 1){
+                            var cookie_lifetime = dataPopup.lifetime,
+                                cookies = getCookie('magenest_cookie_popup'),
+                                date = new Date();
+                                date.setTime(date.getTime());
+                                values = {};
+
+                            if(cookies != null && cookies != ""){
+                                var cookieArr = JSON.parse(cookies);
+                                values = cookieArr;
+                                if(typeof cookieArr.popup_id !== 'undefined' || cookieArr.popup_id != null){
+                                    cookieArr.popup_id = date.getTime();
+                                    values = cookieArr;
+                                }else{
+                                    values[popup_id] = date.getTime();
+                                }
+                            }else{
+                                values[popup_id] = date.getTime();
+                            }
+                            eraseCookie('magenest_cookie_popup');
+                            createCookie('magenest_cookie_popup',JSON.stringify(values),cookie_lifetime);
+                        }
+                        $.ajax({
+                            url: urlBuilder.build(url_close_popup),
+                            type: 'GET',
+                            data: payload,
+                            contentType: 'json',
+                            /** @inheritdoc */
+                            success: function (response) {
+                            }
+                        });
+                    });
+                    $('#nobutton').click(function () {
+                        window.open('https://www.google.com/', '_self', '');
+                    });
+                }
+                interval = setInterval(checkShowPopup,1000);
+                interval_close = setInterval(closePopup,1000);
+            });
+        });
+    </script>
+    <?php
+endif;

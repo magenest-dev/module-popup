@@ -1,0 +1,3022 @@
+@color-white: #fff;
+& when (@media-common = true) {
+  #bio_ep{
+    max-width: 90vw;
+    max-height: 90vh;
+    img{
+      width: 100%;
+      height: 100%;
+      max-height: 90vh;
+    }
+    p{
+      margin: 0;
+    }
+    a{
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+        color: #fff;
+      }
+      &:active{
+        color: #fff;
+        text-decoration: none;
+      }
+      &:visited{
+        color: #fff;
+
+      }
+    }
+    textarea{
+      &:focus{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
+  button{
+    &:not(.primary):active{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border: 0;
+    }
+  }
+  .popup-content{
+    max-height: calc(~'90vh - 24px');
+    overflow: auto;
+  }
+
+  .popup-step-1{
+  padding-bottom: 24px;
+  }
+  .popup-step-2{
+    padding-bottom: 24px;
+    overflow: hidden;
+    height: 400px;
+    max-height: 90vh;
+    font-size: 20px;
+    position: relative;
+    .popup-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 15px;
+      text-align: center;
+    }
+  }
+  .popup-coupon{
+    .coupon{
+      display: block;
+      font-weight: 700;
+    }
+  }
+  .label{
+    display: none;
+  }
+  #bio_ep_bg.popup-bg-3{
+    opacity: 0.92 !important;
+  }
+  #copyright{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.4;
+    color: #fff;
+  }
+  #bio_ep_bg{
+    opacity: 0.7 !important;
+  }
+  #bio_ep_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    line-height: 16px;
+    z-index: 1000;
+    cursor: pointer;
+    &:before{
+      content: "\f00d";
+      font-family: FontAwesome;
+      font-size: 24px;
+    }
+  }
+  //Popup contact form 1
+  #bio_ep{
+    &.popup-default-1{
+      width: 750px;
+      height: auto;
+      background-image: url("../Magenest_Popup/images/bg-popup-27.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      max-width: 90vw;
+      color: #fff;
+      #bio_ep_close{
+        &:before{
+          content: "\f2d3";
+        }
+      }
+      .popup-step-1{
+        background: rgba(0,0,0,0.4);
+      }
+      .popup-step-2{
+        background: rgba(0,0,0,0.4);
+      }
+      .popup-title{
+        padding: 30px 15px 0;
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .popup-description{
+        margin: 20px 0;
+        padding: 0 15px;
+        font-size: 16px;
+      }
+      .popup-action{
+        padding: 0 15px;
+        width: 400px;
+        margin: auto;
+        max-width: 100%;
+        input{
+          min-height: 48px;
+          margin-bottom: 5px;
+          border: 0;
+          &::placeholder{
+            color: #888;
+            font-size: 13px;
+          }
+        }
+        p{
+          margin: 0;
+        }
+        textarea{
+          border: 0;
+          min-height: 100px;
+          &:focus{
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+          }
+          &::placeholder{
+            color: #888;
+            font-size: 13px;
+          }
+        }
+        .popup-subscribe-bottom{
+          margin: 10px 0;
+          .popup-text-accept{
+            margin-bottom: 10px;
+            line-height: 36px;
+            font-size: 14px;
+          }
+          .popup-send-feedback{
+            button{
+              background: #ff0059;
+              color: #fff;
+              text-transform: uppercase;
+              padding: 10px 15px;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              border-radius: 0;
+              width: 150px;
+              height: 45px;
+              font-weight: 400;
+              font-size: 16px;
+              strong{
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+    }
+    &.popup-default-2{
+      background-color: rgb(181, 161, 132) !important;
+      width: 750px;
+      text-align: center;
+      color: #403526;
+      font-family: 'Libre Baskerville';
+      .popup-bg{
+        position: absolute;
+        width: calc(~'50% - 30px');
+        height: 100%;
+        right: 0;
+        background-image: url("../Magenest_Popup/images/bg-popup-59.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+        z-index: -1;
+      }
+      .popup-step-1{
+        width: 50%;
+        margin: 30px;
+        background: rgb(253, 253, 246);
+      }
+      .popup-step-2{
+        width: 50%;
+        margin: 30px;
+        background: rgb(253, 253, 246);
+      }
+      .popup-title{
+        padding: 30px 15px 15px;
+
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Poppins';
+        font-size: 40px;
+      }
+      .popup-description{
+        font-style: italic;
+      }
+      .popup-action{
+        padding: 30px 15px 15px;
+        input{
+          height: 40px;
+          margin-bottom: 5px;
+          border: 1px solid #403526;
+          color: #403526;
+          &::placeholder{
+            color: #403526;
+          }
+        }
+        button{
+          background: #403526;
+          color: #fff;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          height: 40px;
+          text-transform: uppercase;
+          width: 150px;
+          margin-top: 10px;
+        }
+      }
+      #bio_ep_close{
+        color: #403625;
+        &:before{
+          content: "\f2d4";
+        }
+      }
+    }
+    &.popup-default-3{
+      width: 700px;
+      height: auto;
+      background-image: url("../Magenest_Popup/images/bg-popup-49.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+      font-family: "Montserrat";
+      max-width: 90vw;
+      &~ #bio_ep_bg{
+        opacity: 0.9;
+      }
+      #bio_ep_close{
+        display: none;
+      }
+      .popup-title{
+        margin-top: 80px;
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+      .popup-description{
+        max-width: 410px;
+        font-size: 18px;
+        margin: 20px auto;
+        padding: 0 15px;
+      }
+      .popup-action{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        button{
+          width: 200px;
+          height: 60px;
+          color: #fff;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          text-transform: uppercase;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          &:hover{
+            opacity: 0.7;
+            color: #fff;
+            ~i{
+              opacity: 0.7;
+            }
+            ~em{
+              opacity: 0.7;
+            }
+          }
+        }
+        .action-yes{
+          display: inline-block;
+          position: relative;
+          padding: 0 5px;
+          button{
+            background: #00b14f;
+          }
+        }
+        .action-no{
+          display: inline-block;
+          position: relative;
+          padding: 0 5px;
+          button{
+            background: #ed4308;
+          }
+        }
+        i,em {
+          position: absolute;
+          right: 15px;
+          top: 22px;
+        }
+      }
+    }
+    &.popup-default-4 {
+      width: 750px;
+      max-width: 90vw;
+      height: auto;
+      text-align: center;
+      color: #c7c6c7;
+      background-image: url("../Magenest_Popup/images/bg-popup-38-2.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      #bio_ep_close{
+        &:before{
+          content: "\f2d3";
+          color: #afafaf;
+        }
+      }
+      .popup-box-1{
+        text-align: left;
+        padding: 0 30px;
+        .popup-title{
+          padding-top: 25px;
+          font-size: 94px;
+          line-height: 100px;
+          font-weight: 500;
+          span{
+            display: block;
+            font-family: "Oswald";
+            text-transform: uppercase;
+            &.title-top{
+              color: #ff9900;
+              white-space: nowrap;
+            }
+            &.title-bottom{
+              white-space: nowrap;
+              color: #c7c6c7;
+            }
+          }
+        }
+        .popup-description{
+          margin-top: 20px;
+          font-size: 21px;
+          color: #444;
+          font-weight: 400;
+        }
+        .popup-cursor-pointer{
+          padding: 30px 0 26px;
+          .cursor-pointer{
+            width: 330px;
+            height: 45px;
+            background: #ff2b63;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #fff;
+            max-width: 100%;
+          }
+        }
+      }
+      .popup-box-2{
+        display: none;
+        text-align: left;
+        padding: 0 30px;
+        .popup-title{
+          padding-top: 15px;
+          font-family: "Oswald";
+          color: @color-white;
+          text-transform: uppercase;
+          font-weight: 500;
+          .title-left{
+            display: inline-block;
+            font-size: 102px;
+            color: #ff9900;
+            line-height: 130px;
+          }
+          .title-right{
+            display: inline-block;
+            padding: 19px 0;
+            font-size: 46px;
+            line-height: 46px;
+          }
+          .title-right-top{
+            color: #333;
+          }
+          .title-right-bottom{
+            color: #c7c6c7;
+          }
+        }
+        .popup-description{
+          width: 310px;
+          text-align: left;
+          font-size: 18px;
+          color: #444;
+          font-weight: 400;
+          padding: 15px 0;
+        }
+        .popup-action{
+          margin-top: 30px;
+          padding-bottom: 26px;
+          text-align: left;
+          position: relative;
+          input{
+            width: 320px;
+            min-height: 53px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            border-top-left-radius: 5px;
+            -webkit-border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            max-width: 50%;
+            background: #c7c6c7;
+            color: #888;
+            font-weight: 400;
+            &::placeholder{
+              color: #888;
+              font-weight: 400;
+            }
+
+          }
+          .action.primary{
+            min-height: 53px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            border: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            background-color: #ff2b63;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            position: absolute;
+            top: 0;
+            width: 152px;
+
+          }
+        }
+      }
+      .popup-step-2{
+        .popup-content{
+          width: 100%;
+          color: #444;
+          left: 30px;
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+          transform: translateX(0);
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+    &.popup-default-5 {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("../Magenest_Popup/images/bg-popup-6.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      max-width: 100vw;
+      max-height: 100vh;
+      color: #fff;
+      #bio_ep_close{
+        &:before{
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+      #copyright{
+        right: 5px;
+        bottom: 0;
+      }
+      .popup-step-1 {
+        width: 600px;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+        padding-bottom: 174px;
+        max-width: 100%;
+        text-align: center;
+        color: #fff;
+        .popup-content {
+          max-height: calc(~'90vh - 174px');
+        }
+
+      }
+      .popup-title {
+        padding: 80px 15px 0;
+        font-size: 48px;
+        font-weight: 400;
+        font-family: "Roboto";
+        text-transform: uppercase;
+      }
+
+      .popup-description {
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: "Roboto";
+      }
+
+      .subscribe-form {
+        width: 390px;
+        position: relative;
+        margin: 20px auto;
+        input {
+          border: 2px solid @color-white;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          background: transparent;
+          color: @color-white;
+          min-height: 45px;
+          width: 100%;
+          &::placeholder {
+            color: @color-white;
+          }
+        }
+        .action-subscribe{
+          button{
+            background: transparent;
+            padding: 0;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            border: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            i,em {
+              font-size: 31px;
+              color: @color-white;
+            }
+          }
+        }
+      }
+
+      .popup-category {
+        width: 200px;
+        margin: auto;
+        border-bottom: 2px solid @color-white;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        font-family: "Roboto";
+        button{
+          span{
+            font-size: 16px;
+          }
+        }
+        .category-home {
+          z-index: 100;
+          display: inline-block;
+
+          button {
+            background: transparent;
+            color: @color-white;
+            &:active{
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+            }
+
+          }
+        }
+
+        .category-contact-us {
+          display: inline-block;
+
+          button {
+            background: transparent;
+            color: @color-white;
+          }
+        }
+      }
+
+      .action-social {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        .social-elm {
+          display: inline-block;
+          padding: 15px;
+          button {
+            background: #fff;
+            border-radius: 0;
+            position: relative;
+            padding: 10px;
+            i,em {
+              color: #000;
+              font-size: 18px;
+              width: 18px;
+            }
+          }
+
+        }
+      }
+    }
+    &.popup-default-6 {
+      width: 800px;
+      max-width: 90vw;
+      height: auto;
+      color: #fff;
+      text-align: left;
+      #copyright{
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+      }
+      #bio_ep_close{
+        line-height: 12px;
+        background: #fff;
+        padding: 5px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        right: 5px;
+        &:before{
+          font-size: 16px;
+          color: #000;
+        }
+      }
+      .popup-bg{
+        background-image: url("../Magenest_Popup/images/bg-popup-44.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+      }
+      .popup-title{
+        z-index: 103;
+        padding-top: 30px;
+        font-size: 58px;
+        font-weight: 400;
+        font-family: "Playfair Display";
+        color: #000;
+        text-transform: uppercase;
+      }
+      .popup-description{
+        margin: 20px 0;
+        .social-elm{
+          display: inline-block;
+          padding: 0;
+          max-width: 30%;
+          width: 40px;
+          margin-right: 20px;
+          button{
+            outline: 0;
+            color: #ffffff;
+            font-size: 20px;
+            background-position: center center;
+            background-repeat: repeat;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            height: 0;
+            padding: 0 0 100%;
+            position: relative;
+            background: #4f4f4f;
+            i,em{
+              color: #fff;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              -o-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+      .subscribe-text{
+        padding: 30px 0 15px;
+        font-family: "Open Sans";
+        display: block;
+        font-size: 14px;
+        color: #888;
+        .subscribe{
+          font-size: 16px;
+          color: #434343;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+      .popup-action{
+        margin: 20px 0;
+        .popup-email{
+          position: relative;
+          margin-bottom: 10px;
+          margin: 0 auto 10px;
+          .icon-email{
+            i,em{
+              font-size: 16px;
+              color: #828282;
+              position: absolute;
+              left: 12px;
+              top: 12px;
+            }
+          }
+          input{
+            height: 40px;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: "Open Sans";
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #888;
+            padding-left: 40px;
+            max-width: 100%;
+            font-weight: 400;
+            &:before{
+              content: "";
+              font-family: "FontAwesome";
+            }
+            &::placeholder{
+              text-transform: uppercase;
+              font-weight: 400;
+            }
+          }
+        }
+        .action-subscribe{
+          button{
+            outline: 0;
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: bold;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            background-color: #000;
+            width: 100%;
+            height: 40px;
+            border: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            text-transform: uppercase;
+            max-width: 100%;
+          }
+        }
+      }
+      .popup-content{
+        padding: 0 30px;
+      }
+      .popup-step-1 {
+        width: 50%;
+        color: #000;
+      }
+      .popup-step-2{
+        width: 50%;
+        color: #000;
+      }
+    }
+    &.popup-default-7 {
+
+      background-color: #fff !important;
+      color: #000;
+      padding: 30px;
+      font-family: 'Roboto';
+      .popup-content{
+      }
+      .popup-title{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 56px;
+      }
+      .title-elm{
+        position: relative;
+        padding: 5px 0;
+        letter-spacing: 10px;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 240px;
+          height: 5px;
+          background: #000;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .popup-description{
+        padding: 30px 0 0;
+        font-weight: 700;
+        width: 215px;
+        .description-bottom{
+          font-weight: 500;
+          text-transform: uppercase;
+          margin: 15px 0 0;
+          letter-spacing: 1px;
+          font-size: 13px;
+        }
+      }
+      .popup-bg{
+        position: absolute;
+        width: 400px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-image: url("../Magenest_Popup/images/bg-popup-47.jpeg");
+        -webkit-background-size: cover;
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+    &.popup-default-8{
+      text-align: center;
+      background-color: #f1ecec;
+      .popup-bg{
+        width: 100%;
+        height: 200px;
+        background-image: url("../Magenest_Popup/images/bg-popup-50.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      .popup-top{
+        padding: 15px;
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        color: #635b55;
+      }
+      .popup-title{
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 54px;
+        padding-bottom: 15px;
+      }
+      #bio_ep_close{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+    &.popup-default-9{
+      text-align: center;
+      font-family: 'Lato';
+      .popup-step-1{
+        width: 350px;
+        background: #edf0e5;
+        z-index: 1000;
+        max-width: 60%;
+      }
+      .popup-step-2{
+        width: 350px;
+        background: #edf0e5;
+        z-index: 1000;
+        max-width: 60%;
+        position: relative;
+      }
+      .popup-title{
+        font-family: 'Vidaloka';
+        text-transform: uppercase;
+        font-size: 56px;
+        padding: 30px 15px 15px;
+        color: rgb(83, 66, 58);
+      }
+      .popup-description{
+        color: rgb(159, 110, 77);
+        font-size: 16px;
+        padding: 0 15px;
+      }
+      .popup-action{
+        padding: 15px 15px 20px;
+        input{
+          border: 1px solid #888;
+          margin-bottom: 10px;
+          width: 285px;
+          max-width: 100%;
+          height: 40px;
+        }
+        button{
+          color: #fff;
+          text-transform: uppercase;
+          background: rgb(83, 66, 58);
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          height: 40px;
+          width: 150px;
+        }
+      }
+      .popup-bg{
+        position: absolute;
+        width: 250px;
+        right: 0;
+        height: 100%;
+        top: 0;
+        background-image: url("../Magenest_Popup/images/bg-popup-57.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+        z-index: -1;
+      }
+      #bio_ep_close{
+        color: #fff;
+        &:before{
+          content: "\f05c";
+        }
+      }
+    }
+    &.popup-default-10{
+      background-color: #f4eded !important;
+      width: 800px;
+      font-family: 'Montserrat Alternates';
+      .popup-bg{
+        width: 50%;
+        float: left;
+        height: 100%;
+        background-image: url('../Magenest_Popup/images/bg-popup-12.jpeg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: absolute;
+      }
+      .popup-content{
+        width: 50%;
+        text-align: center;
+        padding: 0 15px;
+        float: right;
+      }
+      .popup-title{
+        font-size: 12px;
+        color: #25020f;
+        padding: 30px 0 15px;
+        font-family: 'Open Sans';
+        position: relative;
+        strong{
+          display: block;
+          font-size: 38px;
+          font-family: 'Montserrat Alternates';
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          background: #25020f;
+          bottom: 0;
+          left: 85px;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          background: #ff1168;
+          bottom: 0;
+          right: 85px;
+        }
+        .line-center{
+          position: absolute;
+          width: 40px;
+          height: 5px;
+          background: #9e1e4c;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+      }
+      .popup-description{
+        margin: 20px 0;
+        font-size: 14px;
+      }
+      .popup-action{
+        padding-bottom: 30px;
+        .subscribe-text{
+          color: #222;
+          font-size: 26px;
+          margin-bottom: 10px;
+        }
+        input{
+          height: 48px;
+          border: 1px solid #ccc;
+          color: #333;
+          margin-bottom: 10px;
+          &::placeholder{
+            color: #333;
+          }
+        }
+        button{
+          width: 100%;
+          background: #222;
+          text-transform: capitalize;
+          color: #fff;
+          height: 48px;
+        }
+      }
+    }
+    &.popup-default-11{
+      text-align: center;
+      color: #fff;
+      background-image: url("../Magenest_Popup/images/bg-popup-1.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 820px;
+      #bio_ep_close{
+        &:before{
+          color: #fff;
+          content: "\f2d3";
+        }
+      }
+      .popup-title{
+        font-family: 'Libre Baskerville';
+        font-weight: 600;
+        padding: 60px 15px 0;
+        strong{
+          display: block;
+          font-size: 92px;
+          font-family: 'Titillium Web';
+          text-transform: uppercase;
+        }
+      }
+      .popup-description{
+        font-family: 'Libre Baskerville';
+        padding: 0 15px;
+        strong{
+          display: block;
+          text-transform: uppercase;
+          font-family: 'Libre Baskerville';
+          padding: 30px 0;
+        }
+      }
+      .popup-action{
+        padding-bottom: 36px;
+        button{
+          width: 200px;
+          height: 45px;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 16px;
+          margin-bottom: 5px;
+          max-width: 100%;
+          font-weight: 400;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+        }
+        .action-yes{
+          display: inline-block;
+          margin-right: 20px;
+          button{
+            background: #fff;
+            color: #000;
+            font-weight: 400;
+          }
+        }
+        .action-no{
+          display: inline-block;
+          button{
+            border: 1px solid #fff;
+            background: transparent;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    &.popup-default-12{
+      background-image: url("../Magenest_Popup/images/bg-popup-58.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 800px;
+      text-align: center;
+      .popup-step-1{
+        width: 350px;
+        background: rgba(255, 255, 255,0.6);
+        max-width: 100%;
+        margin: 60px 30px;
+      }
+      .popup-title{
+        font-family: 'Lora';
+        color: rgb(222, 87, 144);
+        font-size: 60px;
+        font-style: italic;
+        padding: 15px;
+      }
+      .popup-description{
+        color: #302929;
+        font-family: '';
+        padding: 0 15px;
+      }
+      #bio_ep_close{
+        color: #666;
+        &:before{
+          content: "\f057";
+        }
+
+      }
+    }
+    &.popup-default-13{
+      height: 500px;
+      color: #fff;
+      font-family: 'Great Vibes';
+      background-image: url("../Magenest_Popup/images/bg-popup-41.jpeg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      padding: 0 30px;
+      font-family: 'Katibeh';
+      width: 800px;
+      #bio_ep_close{
+        &:before{
+          font-size: 24px;
+        }
+      }
+      .popup-step-1{
+        height: 100%;
+        width: 300px;
+        position: relative;
+        max-width: 100%;
+        opacity: 0.9;
+        color: #000;
+        background: rgba(255,255,255,0.8);
+      }
+      .popup-content{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .popup-title{
+        font-size: 16px;
+        position: relative;
+        text-align: center;
+        font-family: 'Vidaloka';
+        padding-bottom: 15px;
+        line-height: 56px;
+        padding: 0 15px 25px;
+        font-style: italic;
+        strong{
+          font-style: normal;
+          font-size: 45px;
+          text-transform: uppercase;
+          display: block;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 5px;
+          background: #000;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+      }
+      .popup-description{
+        text-align: center;
+        margin: 30px 0 15px;
+        font-size: 20px;
+        padding: 0 15px;
+      }
+    }
+    &.popup-default-14{
+      width: 680px;
+      background-image: url("../Magenest_Popup/images/bg-popup-19.jpg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      #bio_ep_close{
+        &:before{
+          font-size: 24px;
+          color: #2db01e;
+        }
+      }
+      .popup-title{
+        font-family: 'Amatic SC';
+        font-size: 90px;
+        color: #2db01e;
+        padding-top: 30px;
+      }
+      .popup-description{
+        color: #b01e66;
+        font-size: 30px;
+        font-family: 'Anton';
+      }
+      .popup-action{
+        width: 400px;
+        margin: 30px auto;
+        input{
+          margin-bottom: 5px;
+          height: 45px;
+          border: 1px solid #999;
+          color: #999;
+          &::placeholder{
+            color: #999;
+          }
+        }
+        button{
+          font-family: 'Montserrat';
+          background: #ffeb96;
+          height: 45px;
+          text-transform: uppercase;
+          color: #2db01e;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          font-size: 16px;
+          width: 210px;
+          margin-top: 15px;
+
+        }
+      }
+      .popup-step-2{
+        font-family: 'Amatic SC';
+        font-size: 36px;
+        color: #2db01e;
+        font-weight: 700;
+      }
+    }
+    &.popup-default-15{
+      background-color: #fff !important;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      width: 800px;
+      text-align: center;
+      font-family: 'Open Sans';
+      #bio_ep_close{
+        &:before{
+          color: #a09d9d;
+          content: "\f2d3";
+        }
+      }
+      .popup-step-1{
+        width: 400px;
+        float: right;
+        max-width: 50%;
+      }
+      .popup-step-2{
+        width: 400px;
+        float: right;
+        max-width: 50%;
+      }
+      .popup-bg{
+        background-image: url("../Magenest_Popup/images/bg-popup-2.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        width: 400px;
+        max-width: 50%;
+        position: absolute;
+      }
+      .popup-title{
+        color: #d6b9ba;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 30px 0 15px;
+        font-family: 'Playfair Display';
+      }
+      .popup-description{
+        color: #606060;
+        font-size: 13px;
+        padding: 0 15px 15px;
+      }
+      .popup-action{
+        width: 350px;
+        margin: auto;
+        max-width: 90%;
+        text-align: right;
+        .popup-action-elm{
+          position: relative;
+          margin-bottom: 5px;
+          i, em{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            color: #606060;
+            font-size: 14px;
+          }
+        }
+        input{
+          height: 40px;
+          color: #606060;
+          font-size: 13px;
+          &::placeholder{
+            color: #606060;
+            font-size: 13px;
+          }
+        }
+        textarea{
+          height: 100px;
+          margin-bottom: 5px;
+        }
+        button{
+          background: #ff0061;
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          height: 40px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          margin-bottom: 15px;
+          width: 151px;
+          text-transform: uppercase;
+          strong{
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    &.popup-default-16{
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      text-align: center;
+      background-image: url("../Magenest_Popup/images/bg-popup-56.jpeg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      .popup-bg{
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 5px solid #fff;
+      }
+      #bio_ep_close{
+        &:before{
+          color: #fff;
+        }
+      }
+      .popup-step-1{
+        width: 500px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 1px 1px 10px #000;
+        max-width: 75%;
+      }
+      .popup-step-2{
+        width: 500px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 1px 1px 10px #000;
+        max-width: 75%;
+      }
+      .popup-title{
+        padding: 30px 0;
+        text-transform: uppercase;
+        font-size: 36px;
+        p{
+          font-family: 'Playfair Display';
+          font-weight: 700;
+        }
+        span{
+          font-family: 'Quicksand';
+          font-size: 26px;
+          letter-spacing: 2px;
+        }
+      }
+      .popup-description{
+        padding: 30px 0;
+        margin: 0 30px;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 370px;
+          height: 1px;
+          background: #888;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+        &:before{
+          content: '';
+          width: 370px;
+          height: 1px;
+          background: #888;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+      }
+      .popup-action{
+        padding: 30px 15px;
+        input{
+          display: block;
+          width: 300px;
+          height: 40px;
+          border: 1px solid #888;
+          margin: 0 auto 5px;
+        }
+        button{
+          height: 40px;
+          background: #000;
+          border-radius: 0;
+          color: #fff;
+          text-transform: uppercase;
+          border: 1px solid #000;
+          width: 150px;
+        }
+      }
+      .popup-bottom{
+        font-size: 13px;
+        font-style: italic;
+        span{
+          position: relative;
+          cursor: pointer;
+          &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #333;
+          }
+        }
+      }
+    }
+    &.popup-default-17{
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      background-image: url("../Magenest_Popup/images/bg-popup-54.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      #bio_ep_close{
+        &:before{
+          color: #000;
+        }
+      }
+      .popup-step-1{
+        width: 400px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        max-width: 90%;
+      }
+      .popup-title{
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 30px 0 15px;
+        font-size: 36px;
+        font-family: '';
+      }
+      .popup-description{
+        padding: 0 30px;
+      }
+      .action-social{
+        padding: 15px 0;
+      }
+      &.social-face{
+        button{
+          background-color: #3b5998;
+          &:hover{
+            background-color: rgba(59, 89, 152, 0.7);
+          }
+        }
+      }
+      &.social-twitter{
+        button{
+          background-color: #55acee;
+          &:hover{
+            background-color: rgba(85, 172, 238, 0.7);
+          }
+        }
+      }
+      &.social-youtube{
+        button{
+          background-color: #e52d27;
+          &:hover{
+            background-color: rgba(229, 45, 39, 0.7);
+          }
+        }
+      }
+      .social-elm{
+        display: inline-block;
+        padding: 0 15px;
+        max-width: 30%;
+        width: 80px;
+
+        button{
+          outline: 0;
+          color: #ffffff;
+          font-family: "Open Sans";
+          font-size: 20px;
+          background-position: center center;
+          background-repeat: repeat;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border: 0;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          width: 100%;
+          height: 0;
+          padding: 0 0 100%;
+          position: relative;
+          i,em{
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+          }
+        }
+        &.social-face{
+          button{
+            background-color: #3b5998;
+            &:hover{
+              background-color: rgba(59, 89, 152, 0.7);
+            }
+          }
+        }
+        &.social-twitter{
+          button{
+            background-color: #55acee;
+            &:hover{
+              background-color: rgba(85, 172, 238, 0.7);
+            }
+          }
+        }
+        &.social-youtube{
+          button{
+            background-color: #e52d27;
+            &:hover{
+              background-color: rgba(229, 45, 39, 0.7);
+            }
+          }
+        }
+      }
+      .line{
+        display: block;
+        position: relative;
+        margin-bottom: 15px;
+        &:before{
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: 70px;
+          height: 1px;
+          background: #afafac;
+          content: '';
+          left: 80px;
+        }
+        &:after{
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: 70px;
+          height: 1px;
+          background: #afafac;
+          content: '';
+          right: 80px;
+        }
+      }
+    }
+    &.popup-default-18{
+      display: block;
+      width: 450px;
+      text-align: center;
+      background-color: #fff !important;
+      .popup-title{
+        padding: 15px 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+      }
+      .popup-bg{
+        width: 100%;
+        height: 200px;
+        background-image: url("../Magenest_Popup/images/bg-popup-60.png");
+        -webkit-background-size: cover;
+        background-size: cover;
+
+      }
+      .popup-description{
+        padding: 0 50px;
+        font-size: 18px;
+      }
+      .popup-action{
+        width: 330px;
+        margin: auto;
+        padding: 15px;
+        max-width: 100%;
+        input{
+          border: 1px solid #222;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          height: 40px;
+          text-align: center;
+          &::placeholder{
+            text-align: center;
+          }
+        }
+        button{
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          background: #222;
+          height: 40px;
+          text-transform: uppercase;
+          color: #fff;
+          margin-top: 5px;
+          width: 100%;
+          strong{
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    &.popup-default-19{
+      text-align: center;
+      font-family: 'Quicksand';
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      background-image: url("../Magenest_Popup/images/bg-popup-34.jpeg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      #bio_ep_close{
+        &:before{
+          color: #fff;
+        }
+      }
+      .popup-step-1{
+        width: 600px;
+        margin: auto;
+        background: rgba(255,255,255,0.7);
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 90vw;
+      }
+      .popup-content{
+        padding: 30px 15px;
+      }
+      .popup-title{
+        text-transform: uppercase;
+        padding: 30px 0 15px;
+        font-size: 46px;
+      }
+      .popup-description{
+        width: 350px;
+        padding: 0 15px;
+        margin: auto;
+        margin-bottom: 15px;
+        max-width: 100%;
+      }
+      .popup-action{
+        padding: 0 15px;
+        width: 350px;
+        max-width: 100%;
+        margin: 0 auto 15px;
+        input{
+
+          border: 0;
+          height: 45px;
+          margin-bottom: 5px;
+        }
+        button{
+          width: 100%;
+          background: #222;
+          color: #fff;
+          text-transform: uppercase;
+          height: 45px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+        }
+      }
+      .popup-step-2{
+        width: 600px;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 90vw;
+        font-size: 24px;
+        background: rgba(255,255,255,0.7);
+      }
+    }
+    &.popup-default-20{
+      width: 750px;
+      background-color: #f4f4f4 !important;
+      font-family: 'Poppins';
+      #bio_ep_close{
+        &:before{
+          content: "\f2d3";
+        }
+      }
+      .popup-bg{
+        width: 45%;
+        float: left;
+        display: inline-block;
+        height: 470px;
+        max-height: 90vh;
+        background-image: url("../Magenest_Popup/images/bg-popup-42.jpeg");
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      .popup-content{
+        width: 55%;
+        padding: 0 15px;
+        text-align: center;
+      }
+      .popup-title{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 46px;
+        padding: 30px 0 15px;
+      }
+      .popup-description{
+        strong{
+          display: block;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 50px;
+        }
+      }
+      .popup-action{
+        padding: 15px 0;
+        text-align: center;
+        .popup-sex{
+          padding: 15px 0;
+          input{
+            min-height: 1px;
+            margin-bottom: 0;
+            margin-left: 10px;
+            &:first-child{
+              margin-left: 0;
+            }
+          }
+
+        }
+        input{
+          min-height: 40px;
+          border: 1px solid #ccc;
+          color: #222;
+          &::placeholder{
+            color: #ccc;
+          }
+        }
+        button{
+          color: #fff;
+          text-transform: uppercase;
+          background: #222;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          width: 100%;
+          height: 40px;
+        }
+      }
+      .popup-step-2{
+        text-align: center;
+        .popup-content{
+          width: 100%;
+        }
+      }
+    }
+    &.popup-default-21{
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      background-image: url("../Magenest_Popup/images/bg-popup-35.jpeg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      color: #fff;
+      .popup-step-1{
+        width: 600px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(0,0,0,0.6);
+        max-width: 90vw;
+        .popup-content{
+          padding: 30px;
+          padding-bottom: 0;
+        }
+      }
+      .popup-title{
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        font-size: 26px;
+        strong{
+          display: block;
+          font-family: 'Caveat';
+          text-transform: initial;
+          font-size: 96px;
+        }
+      }
+      .popup-description{
+        padding: 10px 0;
+      }
+    }
+    &.popup-default-22{
+      box-shadow: none;
+      .popup-step-1{
+        padding: 0;
+      }
+    }
+    &.popup-default-23{
+      width: 570px;
+      text-align: center;
+      background-color: #fff !important;
+      #bio_ep_close{
+        &:before{
+          color: rgb(183, 151, 79);
+        }
+      }
+      .popup-bg{
+        width: 100%;
+        height: 220px;
+        background-image: url("../Magenest_Popup/images/bg-popup-51.png");
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+
+      }
+      .popup-title{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        padding: 15px 0;
+        font-family: 'Abril Fatface';
+        letter-spacing: 3px;
+        color: #000;
+        strong{
+          display: block;
+        }
+      }
+      .popup-description{
+        color: rgb(183, 151, 79);
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .popup-action{
+        width: 320px;
+        margin: auto;
+        padding: 15px;
+        max-width: 100%;
+        input{
+          margin-bottom: 5px;
+          height: 40px;
+          &::placeholder{
+            color: rgb(183, 151, 79);
+          }
+        }
+        button{
+          width: 155px;
+          text-transform: uppercase;
+          color: #fff;
+          background: rgb(183, 151, 79);
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          margin-top: 10px;
+          height: 40px;
+        }
+      }
+      .coupon{
+        color: rgb(183, 151, 79);
+      }
+    }
+    &.popup-default-24{
+      display: block;
+      width: 750px;
+      background-image: url("../Magenest_Popup/images/bg-popup-29.jpeg");
+      -webkit-background-size: cover;
+      background-size: cover;
+      font-family: 'Libre Baskerville';
+      color: #000;
+      #bio_ep_close{
+        &:before{
+          content: "\f05c";
+          font-size: 24px;
+        }
+      }
+      .popup-content{
+        text-align: center;
+        padding: 15px;
+        text-shadow: 0 0 2px #fff;
+      }
+      .popup-title{
+        padding: 15px 0;
+        p{
+          text-transform: uppercase;
+          font-size: 62px;
+        }
+        .top{
+          font-size: 100px;
+        }
+        .upto{
+          position: relative;
+          display: inline-block;
+          &:before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: #000;
+            left: 50px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: #000;
+            right: 50px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .popup-description{
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      .popup-code{
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 110px;
+          height: 2px;
+          background: #222;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &.popup-default-25{
+      font-family: '';
+      overflow: hidden;
+      width: 700px;
+      background-image: url("../Magenest_Popup/images/bg-popup-55.png");
+      -webkit-background-size: cover;
+      background-size: cover;
+      #bio_ep_close{
+        &:before{
+
+        }
+      }
+      .popup-step-1{
+        width: 300px;
+        color: #000;
+        text-transform: uppercase;
+        padding: 0 30px;
+      }
+      .popup-title{
+        padding: 30px 0;
+        font-size: 36px;
+      }
+      .popup-action{
+        padding: 100px 0 30px;
+        text-align: center;
+        button{
+          background: #000;
+          color: #fff;
+          text-transform: uppercase;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          border-radius: 25px;
+          height: 40px;
+          padding: 0 15px;
+        }
+      }
+      .popup-bg{
+        position: absolute;
+        width: 230px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #d1d1d1;
+        z-index: -1;
+        transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        -webkit-transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        -moz-transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        -ms-transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        -o-transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        transform: scale(2) rotate(-80deg) translate(6px, -80px);
+      }
+    }
+
+
+  }
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .popup-content{
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  // Popup id 1
+
+  .popup-step-2{
+    height: 300px;
+  }
+  #bio_ep {
+    &.popup-default-1{
+      .popup-title{
+        font-size: 36px;
+      }
+      .popup-description{
+        margin: 10px 0;
+        font-size: 14px;
+      }
+      .popup-action{
+        input{
+          min-height: 35px;
+        }
+        .popup-subscribe-bottom{
+          .popup-text-accept{
+            float: none;
+            display: block;
+            line-height: 14px;
+          }
+          .popup-send-feedback{
+            float: none;
+            display: block;
+          }
+        }
+      }
+    }
+
+    //Popup id = 2
+
+    //Popup contact form 1
+    &.popup-default-3{
+      .popup-content{
+        padding-bottom: 0;
+      }
+      .popup-title{
+        margin-top: 50px;
+        font-size: 30px;
+      }
+      .popup-description{
+        font-size: 18px;
+      }
+      .popup-action{
+        margin: 30px 0 0;
+        button{
+          width: 170px;
+          height: 40px;
+          margin-bottom: 10px;
+          font-size: 15px;
+          padding-left: 5px;
+        }
+        i,em{
+          right: 12px;
+          top: 12px;
+        }
+      }
+    }
+
+    //Popup id = 4
+    &.popup-default-4 {
+      .popup-box-1{
+        .popup-title{
+          font-size: 50px;
+          line-height: 60px;
+        }
+        .popup-description{
+          font-size: 16px;
+        }
+        .popup-cursor-pointer{
+          padding: 30px 0 15px;
+          .cursor-pointer{
+            height: 40px;
+            width: 275px;
+          }
+        }
+      }
+
+      .popup-box-2{
+        .popup-title{
+          .title-left{
+            font-size: 90px;
+            line-height: 90px;
+          }
+          .title-right{
+            font-size: 40px;
+            line-height: 40px;
+          }
+        }
+        .popup-description{
+          margin: 0;
+          width: 320px;
+          font-size: 16px;
+        }
+        .popup-action{
+          padding-bottom: 15px;
+          input{
+            min-height: 40px;
+            font-size: 14px;
+            &::placeholder{
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          .action.primary{
+            min-height: 40px;
+            font-size: 14px;
+            padding: 5px;
+            width: 105px;
+          }
+        }
+      }
+
+      .popup-step-2{
+      }
+
+    }
+    &.popup-default-5 {
+      .popup-title {
+        font-size: 36px;
+      }
+
+      .popup-description {
+        font-size: 14px;
+      }
+
+      .subscribe-form {
+        width: 280px;
+      }
+
+      .popup-category {
+        font-size: 12px;
+      }
+
+    }
+    &.popup-default-7 {
+      .popup-bg{
+        width: 60%;
+      }
+    }
+
+    &.popup-default-10{
+      .popup-title{
+        padding: 30px 0 0;
+        strong{
+          display: block;
+          font-size: 32px;
+          font-family: 'Montserrat Alternates';
+        }
+        &:before{
+          display: none;
+        }
+        &:after{
+          display: none;
+        }
+        .line-center{
+          display: none;
+        }
+      }
+      .popup-action{
+        .subscribe-text{
+          font-size: 22px;
+        }
+      }
+    }
+    &.popup-default-11{
+      .popup-title{
+        strong{
+          font-size: 72px;
+        }
+      }
+      .popup-action{
+        padding-bottom: 30px;
+        .action-text{
+          font-size: 26px;
+        }
+        button{
+          width: 180px;
+        }
+      }
+    }
+    &.popup-default-2{
+      .popup-title{
+        font-size: 34px;
+      }
+    }
+    &.popup-default-15{
+      .popup-title{
+        font-size: 36px;
+      }
+    }
+  }
+
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+  #bio_ep {
+    &.popup-default-6 {
+      .popup-step-1{
+        width: 100%;
+        text-align: center;
+      }
+      .popup-step-2{
+        width: 100%;
+        text-align: center;
+      }
+      .popup-bg{
+        opacity: 0;
+      }
+    }
+    &.popup-default-10{
+      .popup-description{
+        font-size: 12px;
+        margin: 15px 0;
+      }
+      .popup-action{
+        .subscribe-text{
+          font-size: 18px;
+        }
+        input{
+          height: 40px;
+
+        }
+        button{
+          height: 40px;
+        }
+      }
+    }
+
+    &.popup-default-16{
+      #bio_ep_close{
+        top: 5px;
+        right: 5px;
+      }
+      .popup-title{
+        font-size: 30px;
+        span{
+          font-size: 22px;
+        }
+      }
+      .popup-description{
+        &:after{
+          width: 320px;
+        }
+        &:before{
+          width: 310px;
+        }
+      }
+    }
+    &.popup-default-20{
+      .popup-bg{
+        display: none;
+      }
+      .popup-content{
+        width: 100%;
+      }
+      .popup-title{
+        font-size: 36px;
+      }
+      .popup-description{
+        strong{
+          font-size: 32px;
+        }
+      }
+    }
+    &.popup-default-21{
+      .popup-title{
+        strong{
+          font-size: 82px;
+        }
+      }
+      .popup-description{
+        font-size: 14px;
+      }
+    }
+    &.popup-default-25{
+      .popup-step-1{
+        width: 240px;
+      }
+      .popup-title{
+        font-size: 26px;
+      }
+      .popup-bg{
+        position: absolute;
+        width: 230px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #d1d1d1;
+        z-index: -1;
+        transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        -webkit-transform: scale(2) rotate(-80deg) translate(6px, -95px);
+        -moz-transform: scale(2) rotate(-80deg) translate(6px, -95px);
+        -ms-transform: scale(2) rotate(-80deg) translate(6px, -95px);
+        -o-transform: scale(2) rotate(-80deg) translate(6px, -95px);
+        transform: scale(2) rotate(-80deg) translate(6px, -95px);
+      }
+    }
+
+    &.popup-default-9{
+      .popup-title{
+        font-size: 42px;
+      }
+      .popup-action{
+        input{
+          height: 35px;
+        }
+        button{
+          height: 35px;
+        }
+      }
+    }
+    &.popup-default-2{
+      .popup-title{
+        font-size: 24px;
+      }
+      .popup-description{
+        font-size: 15px;
+      }
+      .popup-action{
+        padding: 20px 15px 15px;
+        button{
+         margin-top: 5px;
+        }
+      }
+    }
+    &.popup-default-15{
+      .popup-step-1{
+        max-width: 100%;
+        width: 100%;
+      }
+      .popup-step-2{
+        max-width: 100%;
+        width: 100%;
+      }
+      .popup-bg{
+        opacity: 0;
+      }
+    }
+  }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+  .popup-step-2{
+    height: 250px;
+    font-size: 16px;
+  }
+  #bio_ep {
+    &.popup-default-1 {
+      .popup-action {
+        .popup-subscribe-bottom {
+          .popup-text-accept {
+            font-size: 10px;
+          }
+        }
+        textarea{
+          min-height: 50px;
+        }
+      }
+    }
+
+
+    &.popup-default-3 {
+      .popup-title {
+        margin-top: 30px;
+        font-size: 21px;
+      }
+
+      .popup-description {
+        font-size: 14px;
+      }
+
+      .popup-action {
+
+        i, em {
+          right: 12px;
+          top: 12px;
+        }
+      }
+    }
+    &.popup-default-4 {
+
+      .popup-box-1{
+        text-align: center;
+      }
+      .popup-box-2{
+        text-align: center;
+        .popup-title{
+          .title-left{
+            font-size: 60px;
+          }
+          .title-right{
+            font-size: 26px;
+            line-height: 28px;
+          }
+        }
+        .popup-description{
+          margin: auto;
+          width: 250px;
+          font-size: 14px;
+          text-align: center;
+          padding: 0;
+          max-width: 100%;
+        }
+        .popup-action{
+          margin: 20px auto 0;
+          width: 250px;
+          text-align: center;
+          max-width: 100%;
+          input{
+            max-width: 100%;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            text-align: center;
+          }
+          .action.primary{
+            margin-top: 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+
+      .popup-step-2{
+        .popup-content{
+          width: 100%;
+          text-align: center;
+          left: 0;
+          padding: 0 15px;
+        }
+      }
+    }
+    &.popup-default-5 {
+      .popup-title {
+        font-size: 23px;
+      }
+
+      .subscribe-form {
+        width: 280px;
+      }
+
+      .popup-category {
+        width: 180px;
+        button{
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+
+    }
+    &.popup-default-7 {
+      padding-bottom: 0;
+      .popup-bg{
+        width: 50%;
+      }
+      .popup-title{
+        font-size: 36px;
+        .title-elm{
+          &:after{
+            width: 170px;
+          }
+        }
+      }
+      .popup-description{
+        padding: 15px 0 0;
+      }
+    }
+    &.popup-default-8{
+      .popup-bg{
+        height: 150px;
+      }
+      .popup-title{
+        font-size: 38px;
+        padding: 0 15px;
+      }
+    }
+    &.popup-default-9{
+      .popup-title{
+        font-size: 26px;
+      }
+      .popup-description{
+        font-size: 13px;
+      }
+      .popup-action{
+        input{
+          height: 35px;
+          font-size: 13px;
+          &::placeholder{
+            font-size: 13px;
+          }
+        }
+        button{
+          width: 100%;
+          font-size: 13px;
+        }
+      }
+    }
+
+    &.popup-default-10{
+      .popup-content{
+        width: 100%;
+      }
+      .popup-bg{
+        display: none;
+      }
+      .popup-title{
+        strong{
+          font-size: 16px;
+        }
+      }
+    }
+
+    &.popup-default-11{
+      .popup-title{
+        padding-top: 30px;
+        font-weight: 400;
+        strong{
+          font-size: 52px;
+        }
+      }
+      .popup-description{
+        font-size: 13px;
+        strong{
+          padding: 15px 0;
+        }
+      }
+      .popup-action{
+        padding-top: 10px;
+        padding-bottom: 0;
+        .action-text{
+          font-size: 18px;
+        }
+        button{
+          margin-bottom: 5px;
+          padding: 10px;
+          margin-right: 0;
+          font-size: 14px;
+        }
+        .action-yes{
+          display: block;
+          margin-right: 0;
+        }
+        .action-no{
+          display: block;
+        }
+      }
+    }
+
+    &.popup-default-12{
+      .popup-step-1{
+        width: 250px;
+        margin: 30px auto;
+      }
+      .popup-title{
+        font-size: 40px;
+      }
+      .popup-description{
+        font-size: 14px;
+      }
+      #bio_ep_close{
+        &:before{
+          font-size: 16px;
+        }
+
+      }
+    }
+    &.popup-default-13{
+      height: 300px;
+
+      .popup-title{
+        padding-top: 0;
+        strong{
+          font-size: 30px;
+        }
+      }
+      .popup-step-1{
+        width: 200px;
+      }
+      .popup-description{
+        font-size: 16px;
+      }
+    }
+
+    &.popup-default-14{
+      .popup-title{
+        font-size: 72px;
+        padding-top: 30px;
+      }
+      .popup-description{
+        font-size: 18px;
+      }
+      .popup-action{
+        width: 400px;
+        margin: 30px auto;
+        max-width: 90%;
+        button{
+          font-size: 14px;
+          width: 190px;
+        }
+      }
+      .popup-step-2{
+        font-size: 22px;
+      }
+    }
+    &.popup-default-16{
+      .popup-title{
+        font-size: 26px;
+        padding: 15px;
+        span{
+          font-size: 16px;
+        }
+      }
+      .popup-description{
+        padding: 15px;
+        font-size: 14px;
+        &:after{
+          width: 200px;
+        }
+        &:before{
+          width: 200px;
+        }
+      }
+      .popup-action{
+        padding: 15px;
+        input{
+          max-width: 100%;
+          height: 35px;
+        }
+        button{
+          height: 35px;
+          font-size: 13px;
+          width: 120px;
+        }
+      }
+    }
+
+
+    &.popup-default-17{
+      .popup-title{
+        font-size: 32px;
+        padding: 15px;
+      }
+      .popup-description{
+        font-size: 14px;
+      }
+      .popup-action{
+        input{
+          height: 35px;
+          font-size: 13px;
+        }
+        button{
+          height: 35px;
+          font-size: 13px;
+        }
+      }
+      .action-social{
+        padding: 15px 0 0;
+      }
+      .social-elm{
+        width: 70px;
+
+      }
+      .line{
+        &:before{
+          display: none;
+        }
+        &:after{
+          display: none;
+        }
+      }
+    }
+    &.popup-default-19{
+      .popup-title{
+        font-size: 28px;
+      }
+      .popup-step-2{
+        font-size: 16px;
+      }
+    }
+
+    &.popup-default-20{
+      .popup-bg{
+        display: none;
+      }
+      .popup-content{
+        width: 100%;
+      }
+      .popup-title{
+        font-size: 32px;
+      }
+      .popup-description{
+        strong{
+          font-size: 26px;
+        }
+      }
+      .popup-sex{
+        font-size: 13px;
+      }
+    }
+
+    &.popup-default-21{
+      .popup-title{
+        strong{
+          font-size: 50px;
+          margin: 15px 0;
+        }
+      }
+      .popup-description{
+        font-size: 14px;
+      }
+    }
+
+    &.popup-default-24{
+      .popup-title{
+        p{
+          text-transform: uppercase;
+          font-size: 46px;
+        }
+        .top{
+          font-size: 82px;
+        }
+        .upto{
+          &:before{
+            width: 90px;
+          }
+          &:after{
+            width: 90px;
+          }
+        }
+      }
+      .popup-description{
+        font-size: 13px;
+      }
+      .popup-code{
+        font-size: 14px;
+        &:before{
+          width: 100px;
+        }
+      }
+    }
+    &.popup-default-18{
+      .popup-title{
+        font-size: 26px;
+      }
+      .popup-bg{
+        height: 150px;
+
+      }
+      .popup-description{
+        padding: 0 15px;
+        font-size: 15px;
+      }
+      .popup-action{
+        input{
+          height: 35px;
+          font-size: 13px;
+          &::placeholder{
+            text-align: center;
+            font-size: 13px;
+          }
+        }
+        button{
+          font-size: 13px;
+          height: 35px;
+        }
+      }
+    }
+    &.popup-default-23{
+      .popup-bg{
+        height: 150px;
+
+      }
+      .popup-title{
+        font-size: 26px;
+        padding: 5px 0;
+        letter-spacing: 2px;
+      }
+      .popup-description{
+        color: rgb(183, 151, 79);
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .popup-action{
+        padding-bottom: 15px;
+        input{
+          height: 35px;
+        }
+        button{
+          height: 35px;
+        }
+      }
+    }
+
+    &.popup-default-25{
+      .popup-step-1{
+        width: 155px;
+      }
+      .popup-title{
+        font-size: 20px;
+      }
+      .popup-action{
+        padding: 50px 0 30px;
+        button{
+          height: 35px;
+          font-size: 13px;
+          padding: 0 10px;
+        }
+      }
+      .popup-bg{
+        position: absolute;
+        width: 230px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #d1d1d1;
+        z-index: -1;
+        transform: scale(2) rotate(-80deg) translate(6px, -80px);
+        -webkit-transform: scale(2) rotate(-80deg) translate(6px, -98px);
+        -moz-transform: scale(2) rotate(-80deg) translate(6px, -98px);
+        -ms-transform: scale(2) rotate(-80deg) translate(6px, -98px);
+        -o-transform: scale(2) rotate(-80deg) translate(6px, -98px);
+        transform: scale(2) rotate(-80deg) translate(6px, -98px);
+      }
+    }
+
+    &.popup-default-2{
+      .popup-step-1{
+        width: auto;
+      }
+      .popup-step-2{
+        width: auto;
+      }
+      .popup-title{
+        font-size: 26px;
+      }
+      .popup-description{
+        font-size: 15px;
+      }
+      .popup-action{
+        padding: 20px 15px 15px;
+        input{
+          font-size: 13px;
+          &::placeholder{
+            font-size: 13px;
+          }
+        }
+        button{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

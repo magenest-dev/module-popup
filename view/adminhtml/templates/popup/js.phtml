@@ -1,0 +1,75 @@
+<?php
+/** @var \Magenest\Popup\Block\Adminhtml\Popup\Edit\Js $block */
+?>
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        $(document).ready(function () {
+            $('.field-cookie_lifetime').attr('style','display: none;');
+            var enable_cookie_lifetime = $('#popup_enable_cookie_lifetime').val()*1;
+            if(enable_cookie_lifetime == 1){
+                $('.field-cookie_lifetime').attr('style','display: inherit;');
+            }else{
+                $('#popup_cookie_lifetime').val('1');
+                $('.field-cookie_lifetime').attr('style','display: none;');
+            }
+
+            $('#popup_enable_cookie_lifetime').on('change',function () {
+                var enable_cookie_lifetime = $('#popup_enable_cookie_lifetime').val()*1;
+                if(enable_cookie_lifetime == 1){
+                    $('.field-cookie_lifetime').attr('style','display: inherit;');
+                }else{
+                    $('#popup_cookie_lifetime').val('1');
+                    $('.field-cookie_lifetime').attr('style','display: none;');
+                }
+            });
+
+            $('.field-thankyou_message').attr('style','margin-top: 30px;');
+
+            $('.field-number_x').attr('style','display: none;');
+            var popup_popup_trigger = $('#popup_popup_trigger').val()*1;
+            if(popup_popup_trigger == 4){
+                $('#popup_number_x').val('1');
+                $('.field-number_x').attr('style','display: none;');
+            }else{
+                $('.field-number_x').attr('style','display: inherit;');
+            }
+            $('#popup_popup_trigger').on('change',function () {
+                var popup_popup_trigger = $('#popup_popup_trigger').val()*1;
+                if(popup_popup_trigger == 4){
+                    $('#popup_number_x').val('1');
+                    $('.field-number_x').attr('style','display: none;');
+                }else{
+                    $('.field-number_x').attr('style','display: inherit;');
+                }
+            });
+
+            //Coupon code and Thankyou Message
+            var popup_type = $('#popup_popup_type').val()*1;
+            if(popup_type == 4){
+                $('.field-coupon_code').attr('style','display: inherit;');
+                $('.field-thankyou_message').attr('style','display: inherit;margin-top: 30px;');
+            }else if(popup_type == 2){
+                $('.field-coupon_code').attr('style','display: none;');
+                $('.field-thankyou_message').attr('style','display: inherit;margin-top: 30px;');
+            }else{
+                $('.field-coupon_code').attr('style','display: none;');
+                $('.field-thankyou_message').attr('style','display: none;margin-top: 30px;');
+            }
+            $('#popup_popup_type').on('change',function () {
+                var popup_type = $('#popup_popup_type').val()*1;
+                if(popup_type == 4){
+                    $('.field-coupon_code').attr('style','display: inherit;');
+                    $('.field-thankyou_message').attr('style','display: inherit;margin-top: 30px;');
+                }else if(popup_type == 2){
+                    $('.field-coupon_code').attr('style','display: none;');
+                    $('.field-thankyou_message').attr('style','display: inherit;margin-top: 30px;');
+                }else{
+                    $('.field-coupon_code').attr('style','display: none;');
+                    $('.field-thankyou_message').attr('style','display: none;margin-top: 30px;');
+                }
+            });
+        });
+    });
+</script>
